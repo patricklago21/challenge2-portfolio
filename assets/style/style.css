@@ -109,14 +109,32 @@ footer div ul li {
     width: 50%;
 }
 
+.flexbox-size {
+    border: solid 3px purple;
+    height: 250px;
+    width: auto;
+}
+
+.application-flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+
+
 .application-image {
     position: relative;
-    width: 100%;
     border: solid 3px orange;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.application-image img {
+    height: 100px;
+    width: 100px;
 }
 
 .application-name {
