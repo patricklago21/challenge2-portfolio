@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- need to link CSS style sheet here -->
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
     <title>Patrick Lago's Portfolio</title>
 </head>
 
@@ -35,61 +35,53 @@
     </section>
 
     <!-- deployed applications -->
-    <section id="my-applications">
+    <section id="my-applications" class="applications">
         <!-- title -->
-        <div>
+        <div class="application-header">
             <h2>My Deployed Applications</h2>
         </div>
 
-        <div>
+        <div class="application-flexbox">
             <!-- run buddy -->
-            <article class="run-buddy-image">
-                <img src="./assets/images/run-buddy.png" alt="Completed Run Buddy website"/>
-                
-                <div>
-                    <h3>
-                        <a href="https://patricklago21.github.io/run-buddy-new/">Run Buddy</a>
-                    </h3>
-                </div>
+            <article class="application-image">
+                <img src="./assets/images/run-buddy.png" alt="Run Buddy completed website"/>
+
+                <h3 class="application-name">
+                    <a href="https://patricklago21.github.io/run-buddy-new/" class="application-text">Run Buddy</a>
+                </h3>
             </article>
 
             <!-- old fashioned -->
-            <article>
-                <img src="./assets/images/oldfashioned.png" alt="Old fashioned cocktail"/>
-
-                <div>
-                    <h3>
-                        <a href="https://www.esquire.com/food-drink/drinks/recipes/a3880/old-fashioned-drink-recipe/">Old Fashioned</a>
-                    </h3>
-                </div>
+            <article class="application-image">
+                <img src="./assets/images/oldfashioned.png" alt="Old Fashioned cocktail"/>
+                
+                <h3 class="application-name">
+                    <a href="https://www.esquire.com/food-drink/drinks/recipes/a3880/old-fashioned-drink-recipe/" class="application-text">Old Fashioned</a>
+                </h3>
             </article>
 
             <!-- cuba libre -->
-            <article>
+            <article class="application-image">
                 <img src="./assets/images/cuba-libre-1-1613076185.jpeg" alt="Cuba Libre cocktail"/>
 
-                <div>
-                    <h3>
-                        <a href="https://www.esquire.com/food-drink/drinks/recipes/a3769/cuba-libre-drink-recipe/">Cuba Libre</a>
-                    </h3>
-                </div>
+                <h3 class="application-name">
+                    <a href="https://www.esquire.com/food-drink/drinks/recipes/a3769/cuba-libre-drink-recipe/" class="application-text">Cuba Libre</a>
+                </h3>
             </article>
             
             <!-- negroni -->
-            <article>
+            <article class="application-image">
                 <img src="./assets/images/negroni.png" alt="Negroni cocktail"/>
 
-                <div>
-                    <h3>
-                        <a href="https://www.esquire.com/food-drink/drinks/recipes/a3683/negroni-drink-recipe/">Negroni</a>
-                    </h3>
-                </div>
+                <h3 class="application-name">
+                    <a href="https://www.esquire.com/food-drink/drinks/recipes/a3683/negroni-drink-recipe/" class="application-text">Negroni</a>
+                </h3>
             </article>
         </div>
     </section>
 
     <!-- contact me -->
-    <section id="contact-me">
+    <footer id="contact-me">
         <div>
             <h2>Contact Me</h2>
         </div>
@@ -109,7 +101,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </footer>
 
 </body>
 </html>
