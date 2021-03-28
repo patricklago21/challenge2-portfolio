@@ -3,146 +3,64 @@
     padding: 0;
 }
 
-header {
-    border: solid 3px red;
-    padding: 20px 35px;
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-}
-
-header h1 {
-    border: solid 3px blue;
-    font-weight: bold;
-    color: yellow;
-    font-size: 36px;
-    margin: 0;
-}
-
-header a {
-    text-decoration: none;
-    color: yellow;
-}
-
-header nav {
-    border: solid 3px red;
-    margin: 7px 0;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 20px;
-}
-
-footer {
-    border: solid 3px red;
-    background-color: green;
-    padding: 20px 35px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-footer h2 {
-    border: solid 3px blue;
-    color: yellow;
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
-}
-
-footer div ul {
-    border: solid 3px orange;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-
-footer div ul li {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 20px;
-}
-
-.hero {
-    background-image: url("../images/pexels-adrien-olichon-2387532.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.profile-photo {
-    margin: 20px;
-    margin-left: 40px;
-}
-
-.application-header {
-    border: solid 3px blue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.application-header h2 {
-    text-align: center;
-    border-bottom: solid 3px red;
-    width: 50%;
-}
-
-.flexbox-size {
-    border: solid 3px purple;
-    height: 250px;
-    width: auto;
-}
-
-.application-flexbox {
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-}
-
-
-
-.application-image {
-    position: relative;
-    border: solid 3px orange;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-}  
-
-.application-image img {
+img {
     height: 100px;
     width: 100px;
 }
 
-.application-name {
-    border: solid 3px blue;
-    position: absolute;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
 }
 
-.application-text {
-    text-decoration: none;
-    color: yellow;
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+header {
+    background: tomato;
+    height: 120px;
+}
+
+footer {
+    background: lightgreen;
+    height: 80px;
+}
+
+.hero {
+    background: deepskyblue;
+    height: 200px;
+}
+
+.applications {
+    background: gold;
+    height: 550px;
+}
+
+.application-container {
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cocktail-div {
+    background-color: plum;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.run-buddy img {
+    height: 200px;
+    width: 200px;
+}
+
+.cocktail-image img {
+    height: 150px;
+    width: 150px;
 }
