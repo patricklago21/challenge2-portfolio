@@ -36,21 +36,53 @@ footer {
     height: 200px;
 }
 
+/* application flexbox beginning */
 .applications {
     background: gold;
     height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.applications > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
 }
 
 .application-container {
-    background: tomato;
+    border: solid 3px tomato;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
 }
 
-.cocktail-div {
-    background-color: plum;
+.application-container > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.run-buddy-div, .cocktail-div {
+    background-color: blue;
     display: flex;
+}
+
+.run-buddy-div, .cocktail-div > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.run-buddy-div {
+    justify-content: center;
+}
+
+.cocktail-div {
     flex-direction: row;
     justify-content: space-around;
 }
@@ -64,3 +96,33 @@ footer {
     height: 150px;
     width: 150px;
 }
+
+.run-buddy {
+    position: relative;
+    border: solid 3px yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-text-run {
+    position: absolute;
+}
+
+.cocktail-image {
+    position: relative;
+    border: solid 3px yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-text-cocktail {
+    position: absolute;
+}
+
+
+
+/* application flexbox end */
