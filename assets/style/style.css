@@ -3,15 +3,19 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     height: 100px;
     width: 100px;
+    display: block;
 }
 
 .wrapper {
     display: flex;
-    flex-flow: row wrap;
-    text-align: center;
+    flex-wrap: wrap;
 }
 
 .wrapper > * {
@@ -21,107 +25,188 @@ img {
     border-radius: 10px;
 }
 
+/* header styling */
 header {
-    background: tomato;
+    background: slategray;
     height: 120px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: limegreen;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: limegreen;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+header nav ul li a:hover {
+    color: white;
+    outline: solid 2px white;
 }
 
 footer {
-    background: lightgreen;
-    height: 80px;
+    background: slategray;
+    height: auto;
 }
 
-.hero {
-    background: deepskyblue;
-    height: 200px;
+.footer-title {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 30%;
 }
 
-/* application flexbox beginning */
-.applications {
-    background: gold;
-    height: 550px;
+.footer-title h2 {
+    font-size: 30px;
+    color: limegreen;
+    border-bottom: solid 2px limegreen;
+}
+
+.contact-info {
     display: flex;
     flex-wrap: wrap;
-}
-
-.applications > * {
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
-}
-
-.application-container {
-    border: solid 3px tomato;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
-}
-
-.application-container > * {
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
-}
-
-.run-buddy-div, .cocktail-div {
-    background-color: blue;
-    display: flex;
-}
-
-.run-buddy-div, .cocktail-div > * {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.run-buddy-div {
     justify-content: center;
 }
 
-.cocktail-div {
-    flex-direction: row;
-    justify-content: space-around;
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.run-buddy img {
-    height: 200px;
-    width: 200px;
+.contact-info ul li {
+    padding: 10px 15px;
+    list-style: none;
+    color: white;
 }
 
-.cocktail-image img {
+.contact-info ul li a {
+    color: white;
+}
+
+.hero {
+   background-image: url(../images/pexels-johannes-plenio-1103970.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.hero div img {
     height: 150px;
     width: 150px;
 }
 
+/* application styling */
+.applications {
+    background: slategray;
+    height: auto;
+}
+
+.app-title {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 50%;
+}
+
+.app-title h2 {
+    font-size: 30px;
+    color: limegreen;
+    border-bottom: solid 2px limegreen;
+}
+
+/* run-buddy styling */
 .run-buddy {
-    position: relative;
-    border: solid 3px yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    margin: 10px 0;
+}
+.run-image {
+    position: relative;
+    display: inline-block;
+}
+.run-image img {
+    height: 300px;
+    width: 620px;
 }
 
-.image-text-run {
+.run-caption {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* cocktail div styling */
+.cocktail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cocktail-image {
     position: relative;
-    border: solid 3px yellow;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    margin: 5px;
 }
 
-.image-text-cocktail {
+.cocktail-image img {
+    height: 200px;
+    width: 200px;
+}
+
+.cocktail-caption {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
+/* image caption styling */
+.run-caption a, .cocktail-caption a {
+   text-decoration: none;
+   color: white; 
+   font-weight: bold;
+}
 
+.run-image img, .cocktail-image img {
+    opacity: 0.7;
+}
 
-/* application flexbox end */
+.run-image:hover, .cocktail-image:hover {
+    outline: solid 3px white;
+}
+
