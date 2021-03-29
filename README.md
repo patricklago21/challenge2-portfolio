@@ -1,3 +1,7 @@
-# challenge2-portfolio
+# Module 2, Challenge 2
 
-## Designed by Patrick Lago
+## Completed portfolio with links to my created projects and personal hobbies. When I'm not working on our course, you can find me stirring-up an old fashioned. 
+
+## 🥃
+
+#### Designed by Patrick Lago
