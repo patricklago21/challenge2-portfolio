@@ -210,3 +210,17 @@ footer {
     outline: solid 3px white;
 }
 
+/* media queries */
+@media screen and (max-width: 575px) {
+    .applications {
+        width: 80%;
+    }
+
+    .run-image img {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
